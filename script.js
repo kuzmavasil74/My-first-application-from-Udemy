@@ -62,12 +62,20 @@
 // (null, '', false, undefined, NaN) boolean 0;
 // -------------------------------------------------
 
-const hamburger = 3;
-const friest = 1;
-const cola = 0;
+// const hamburger = 3;
+// const friest = 1;
+// const cola = 0;
 
-if (hamburger === 3 && friest && cola === 3) {
-  console.log("We'll order");
-} else {
-  console.log("We'll go out");
+// if (hamburger === 3 && friest && cola === 3) {
+//   console.log("We'll order");
+// } else {
+//   console.log("We'll go out");
+// }
+let hamburger;
+const fries = NaN;
+const cola = 0;
+const nuggets = 2;
+
+if ((hamburger && cola) || (fries === 3 && nuggets)) {
+  console.log("Done!");
 }
