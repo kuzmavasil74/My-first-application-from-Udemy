@@ -37,3 +37,37 @@
 //     console.log("Not today");
 //     break;
 // }
+
+// const hamburger = false;
+// const friest = true;
+
+// if (hamburger && friest) {
+//   console.log(hamburger);
+// } else {
+//   console.log(false);
+// }
+
+// console.log(hamburger && friest);
+
+// const hamburger = false;
+// const friest = false;
+
+// if (hamburger || friest) {
+//   console.log("true");
+// } else {
+//   console.log(false);
+// }
+
+// ------------------------------------------------
+// (null, '', false, undefined, NaN) boolean 0;
+// -------------------------------------------------
+
+const hamburger = 3;
+const friest = 1;
+const cola = 0;
+
+if (hamburger === 3 && friest && cola === 3) {
+  console.log("We'll order");
+} else {
+  console.log("We'll go out");
+}
