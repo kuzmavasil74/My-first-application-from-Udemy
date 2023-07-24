@@ -1,55 +1,24 @@
 'use strict';
-const usdCurr = 28;
-const discount = 0.9;
+const str = 'test';
+const arr = [3, 4, 6, 7];
 
-function convert(amoumt, curr) {
-  return curr * amoumt;
-}
-function promotion(result) {
-  console.log(result * discount);
-}
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str);
 
-const res = convert(500, usdCurr);
-promotion(res);
+const fruit = 'Some fruit';
+// console.log(fruit.indexOf('q'));
 
-function test() {
-  for (let i = 0; i < 5; i++) {
-    console.log(i);
-    if (i === 3) {
-      return;
-    }
-  }
-  console.log('Done');
-}
+const logg = 'Hello world';
+// console.log(logg.slice(0, 6));
+// console.log(logg.substring(0, 5));
+// console.log(logg.substr(5, 6));
 
-test();
+const num = 12.2;
 
-function doNotjing() {}
+// console.log(Math.round(num));
 
-console.log(doNotjing() === undefined);
+const test = '12.2px';
 
-function sayHello(name) {
-  return `Привет, ${name}!. `;
-}
-console.log(sayHello('Антон'));
-
-function returnNeighboringNumbers(arr) {
-  return new Array(arr - 1, arr, arr + 1);
-}
-console.log(returnNeighboringNumbers(5));
-
-function getMathResult(base, progression) {
-  if (typeof progression !== 'number' || progression <= 0) {
-    return base;
-  }
-  let str = '';
-  for (let i = 1; i <= progression; i++) {
-    if (i === progression) {
-      str += `${base * i}`;
-    } else {
-      str += `${base * i}---`;
-    }
-  }
-  return str;
-}
-console.log(getMathResult(4, 6));
+// console.log(parseInt(test));
+// console.log(parseFloat(test));
