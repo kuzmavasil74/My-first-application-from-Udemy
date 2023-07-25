@@ -1,24 +1,30 @@
 'use strict';
-const str = 'test';
-const arr = [3, 4, 6, 7];
+function calculateVolumeAndArea(length) {
+  if (length <= 0 || typeof length !== 'number' || !Number.isInteger(length)) {
+    return 'При вычислении произошла ошибка';
+  }
+  let volume = 0,
+    area = 0;
+  volume = length * length * length;
+  area = 6 * (length * length);
+  return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+}
+console.log(calculateVolumeAndArea(-5));
 
-// console.log(str.toUpperCase());
-// console.log(str.toLowerCase());
-// console.log(str);
+function getCoupeNumber(seatNumber) {
+  if (
+    typeof seatNumber !== 'number' ||
+    seatNumber < 0 ||
+    !Number.isInteger(seatNumber)
+  ) {
+    return 'Ошибка. Проверьте правильность введенного номера места';
+  }
 
-const fruit = 'Some fruit';
-// console.log(fruit.indexOf('q'));
+  if (seatNumber === 0 || seatNumber > 36) {
+    return 'Таких мест в вагоне не существует';
+  }
 
-const logg = 'Hello world';
-// console.log(logg.slice(0, 6));
-// console.log(logg.substring(0, 5));
-// console.log(logg.substr(5, 6));
+  return Math.ceil(seatNumber / 4);
+}
 
-const num = 12.2;
-
-// console.log(Math.round(num));
-
-const test = '12.2px';
-
-// console.log(parseInt(test));
-// console.log(parseFloat(test));
+getCoupeNumber(33);
