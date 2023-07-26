@@ -26,8 +26,8 @@ const personalMovieDB = {
 
 function rememberMyFilms() {
   for (let i = 0; i < 2; i++) {
-    const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = +prompt('На сколько оцените его?', '');
+    const a = prompt('Один из последних просмотренных фильмов?', '').trim(),
+      b = +prompt('На сколько оцените его?', '').trim();
     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
       personalMovieDB.movies[a] = b;
     } else {
@@ -57,7 +57,7 @@ function showMyDB(hidden) {
     console.log(personalMovieDB);
   }
 }
-showMyDB(personalMovieDB.privat);
+// showMyDB(personalMovieDB.privat);
 
 function writeYourGenres() {
   for (let i = 1; i < 4; i++) {
@@ -71,4 +71,4 @@ function writeYourGenres() {
   }
 }
 
-writeYourGenres();
+// writeYourGenres();
